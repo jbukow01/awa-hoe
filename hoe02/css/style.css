@@ -1,0 +1,197 @@
+/* CSS Reset */
+html, body, h1, h2, h3, h4, h5, h6, p, blockquote, ol, ul, li {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+img {
+	border:none;
+}
+
+ul, ol {
+	list-style-type: none;
+}
+
+/* Setting our own defaults */
+body {
+    font-family: Arial, Verdana, Geneva, sans-serif;
+    color: #04080b;
+    background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    color: #714f2b;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 0.25em;
+}
+
+#pagesidebar h2 {
+    font-size: 1.25em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+a:link, a:visited {
+    color: #2b4c71;
+}
+
+#page {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#pageheader {
+    overflow: hidden;
+    padding: 1em 0;
+}
+
+#pageheader h1 {
+    float: left;
+    font-size: 3em;
+    color: #203954;
+    text-shadow: 2px 2px 0 #999999;
+}
+
+#pageheader h1 span {
+    color: #4c712b;
+}
+
+#pageheader nav {
+    float: right;
+    padding-top: 1.25em;
+}
+
+#pageheader nav li {
+    float: left;
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+#pageheader nav li a {
+    float: left;
+    background-color: #2b4c71;
+    color: #ffffff;
+    display: block;
+    border-radius: 0.375em;
+    padding: 0.25em 1.25em 0.375em 1.25em;
+    text-decoration: none;
+}
+
+#pageheader nav li.currentpage a {
+    background-color: #4c712b;
+}
+
+#pageheader nav li:last-child {
+    margin-right: 0;
+}
+
+#introduction {
+    overflow: hidden;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#introduction p {
+    font-size: 1.5em;
+}
+
+#introduction img {
+    float: right;
+    border: 4px solid #cad2db;
+    border-radius: 0.375em;
+    margin-left: 2%;
+}
+
+#introduction a {
+    text-decoration: none;
+}
+
+#latestnews {
+    width: 49%;
+    float: left;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+#latestnews article {
+    border-bottom: 1px solid #cad2db;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+#latestnews article a {
+    text-decoration: none;
+}
+
+#presscoverage {
+    width: 49%;
+    float: right;
+    background-color: #e2e7ec;
+    border-radius: 0.375em;
+    box-shadow: 2px 2px 0 #999999;
+}
+
+#presscoverage .inner {
+    padding: 1em;
+}
+
+#presscoverage blockquote {
+    margin-bottom: 1em;
+    font-style: italic;
+}
+
+#pagefooter {
+    clear: both;
+    overflow: hidden;
+    font-size: 0.875em;
+    background-color: #203955;
+    color: #cad2db;
+    border-radius: 0.375em;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+#pagefooter p {
+    float: left;
+}
+#pagefooter ul {
+    float: right;
+}
+#pagefooter li {
+    float: left;
+    padding-right: 1em;
+    margin-right: 1em;
+    border-right: 1px solid #cad2db;
+}
+
+#pagefooter a {
+    color: #cad2db;
+    text-decoration: none;
+}
+
+#pagefooter li:last-child {
+    padding-right: 0;
+    margin-right: 0;
+    border: none;
+}
+
+#columncontainer #content {
+    width: 73.5%;
+    float: right;
+}
+
+#pagesidebar {
+    width: 24.5%;
+    float: left;
+}
+
+#breadcrumbs {
+    font-size: 0.75em;
+}
