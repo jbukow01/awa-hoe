@@ -1,0 +1,458 @@
+@font-face {
+    font-family: 'roboto slabbold';
+    src: url(../fonts/RobotoSlab-Bold-webfont.woff) format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+/* CSS Reset */
+html, body, h1, h2, h3, h4, h5, h6, p, blockquote, ol, ul, li, figure, figcaption, form, fieldset, label, legend {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+img {
+	border:none;
+}
+
+ul, ol {
+	list-style-type: none;
+}
+
+/* Setting our own defaults */
+body {
+    font-family: Arial, Verdana, Geneva, sans-serif;
+    color: #04080b;
+    background-color: #ffffff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    color: #714f2b;
+    font-family: 'roboto slabbold', Georgia;
+}
+
+/* ------------------ FORMS ------------------ */
+textarea, input, select, option {
+    font-family: Arial, Verdana, Geneva, sans-serif;
+    color: #04080b;
+    font-size: 0.875em;
+}
+label {
+    font-weight: bold;
+    width: 40%;
+    float: left;
+    text-align: right;
+    padding-right: 1em;
+}
+form {
+    width: 50%;
+}
+fieldset {
+    padding: 1em;
+    border: 4px solid #cad2db;
+    border-radius: 0.375em;
+    margin-right: 1px;
+}
+.controlgroup {
+    padding-bottom: 1em;
+    clear: left;
+}
+textarea, input[type=text], input[type=email] {
+    width: 55%;
+    border: 1px solid #cad2db;
+    padding: 0.2em;
+}
+textarea {
+    height: 10em;
+}
+legend {
+    font-family: 'roboto slabbold', Georgia, serif;
+    font-size: 1.5em;
+    color: #714f2b;
+}
+
+.submit-field {
+    clear: left;
+    text-align: center;
+}
+
+
+select {
+    border: 1px solid #cad2db;
+}
+
+input[type=submit] {
+    border-color: blue;
+    font-weight: bold;
+    padding: 0.5em 2em 0.5em 2em;
+
+}
+input[type=submit]:hover {
+    border-color: red;
+}
+/* ------------------ END FORMS ------------------ */
+
+/* ------------------ BUTTON PULSE ------------------ */
+@-webkit-keyframes hvr-back-pulse {
+  50% {
+    background-color: rgba(32, 152, 209, 0.75);
+  }
+}
+
+@keyframes hvr-back-pulse {
+  50% {
+    background-color: rgba(32, 152, 209, 0.75);
+  }
+}
+
+.hvr-back-pulse {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -moz-osx-font-smoothing: grayscale;
+  overflow: hidden;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
+  -webkit-transition-property: color, background-color;
+  transition-property: color, background-color;
+}
+.hvr-back-pulse:hover, .hvr-back-pulse:focus, .hvr-back-pulse:active {
+  -webkit-animation-name: hvr-back-pulse;
+  animation-name: hvr-back-pulse;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-delay: 0.2s;
+  animation-delay: 0.2s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-color: #2098d1;
+  background-color: #2098d1;
+  color: white;
+}
+/* ------------------ BUTTON PULSE END ------------------ */
+
+div .textbody p {
+    font-family: 'roboto slabbold', Georgia;
+}
+
+h2 {
+    font-size: 2em;
+    margin-bottom: 0.25em;
+}
+
+#pagesidebar h2 {
+    font-size: 1.25em;
+}
+
+h3 {
+    font-size: 1.5em;
+}
+
+a:link, a:visited {
+    color: #2b4c71;
+}
+
+#page {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#pageheader {
+    overflow: hidden;
+    padding: 1em 0;
+}
+
+#pageheader h1 {
+    float: left;
+    font-size: 3em;
+    color: #203954;
+    text-shadow: 2px 2px 0 #999999;
+}
+
+#pageheader h1 span {
+    color: #4c712b;
+}
+
+#pageheader nav {
+    float: right;
+    padding-top: 1.25em;
+}
+
+#pageheader nav li {
+    float: left;
+    font-weight: bold;
+    margin-right: 1em;
+}
+
+#pageheader nav li a {
+    float: left;
+    background-color: #2b4c71;
+    color: #ffffff;
+    display: block;
+    border-radius: 0.375em;
+    padding: 0.25em 1.25em 0.375em 1.25em;
+    text-decoration: none;
+}
+
+#pageheader nav li.currentpage a {
+    background-color: #4c712b;
+}
+
+#pageheader nav li:last-child {
+    margin-right: 0;
+}
+
+#introduction {
+    overflow: hidden;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+#introduction p {
+    font-size: 1.5em;
+}
+
+#introduction #imagewrapper {
+    float: right;
+    margin-left:2%;
+    border: 4px solid #cad2db;
+    border-radius: 0.375em;
+    width: 50%;
+}
+
+#introduction img {
+    max-width: 100%;
+}
+
+#introduction a {
+    text-decoration: none;
+}
+
+#latestnews {
+    width: 49%;
+    float: left;
+    padding-top: 1em;
+    padding-bottom: 2em;
+}
+
+#latestnews article {
+    border-bottom: 1px solid #cad2db;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+#latestnews article a {
+    text-decoration: none;
+}
+
+#presscoverage {
+    width: 49%;
+    float: right;
+    background-color: #e2e7ec;
+    border-radius: 0.375em;
+    box-shadow: 2px 2px 0 #999999;
+}
+
+#presscoverage .inner {
+    padding: 1em;
+}
+
+#presscoverage blockquote {
+    margin-bottom: 1em;
+    font-style: italic;
+}
+
+#pagefooter {
+    clear: both;
+    overflow: hidden;
+    font-size: 0.875em;
+    background-color: #203955;
+    color: #cad2db;
+    border-radius: 0.375em;
+    padding: 1em;
+    margin-bottom: 1em;
+}
+
+#pagefooter p {
+    float: left;
+}
+#pagefooter ul {
+    float: right;
+}
+#pagefooter li {
+    float: left;
+    padding-right: 1em;
+    margin-right: 1em;
+    border-right: 1px solid #cad2db;
+}
+
+#pagefooter a {
+    color: #cad2db;
+    text-decoration: none;
+}
+
+#pagefooter li:last-child {
+    padding-right: 0;
+    margin-right: 0;
+    border: none;
+}
+
+#columncontainer {
+    padding: 1em 0 0 0;
+}
+
+#columncontainer #content {
+    width: 73.5%;
+    float: right;
+}
+
+#pagesidebar {
+    width: 24.5%;
+    float: left;
+    background-color: #e2e7ec;
+    border-radius: 0.375em;
+    box-shadow: 2px 2px 0 #999999;
+    margin-bottom: 2em;
+}
+
+#pagesidebar nav,
+#pagesidebar section {
+    padding: 1em 1em 0 1em;
+}
+
+#breadcrumbs {
+    font-size: 0.75em;
+    padding-bottom: 0.5em;
+    font-style: italic;
+}
+
+#content {
+    padding-bottom: 2em;
+}
+
+#content ul,
+#content p,
+#pagesidebar p {
+    margin-bottom: 1.25em;
+}
+
+#content .highlightlist {
+    list-style-type: none;
+    padding-left: 1em;
+}
+
+#content .highlightlist li {
+    padding-left: 20px;
+    background: url(../images/star2.png) 0 0.1em no-repeat;
+}
+
+#content li {
+    margin-bottom: 0.75em;
+}
+
+#pagesidebar nav ul li:first-child {
+    border-top: 1px solid #96a6b9;
+}
+
+#pagesidebar nav ul li {
+    border-bottom: 1px solid #96a6b9;
+}
+
+#pagesidebar nav ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 0.375em 0;
+}
+
+.mediaframe audio {
+    background-color: #e2e7ec;
+    border-radius: 0.375em;
+    box-shadow: 2px 2px 0 #999999;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+.mediaframe video {
+    background-color: #e2e7ec;
+    border-radius: 0.375em;
+    box-shadow: 2px 2px 0 #999999;
+    padding: 0.5em;
+    margin-bottom: 1em;
+}
+
+video {
+    display: block;
+}
+
+figure.callout {
+    float: right;
+    background-color: #e2e7ec;
+    border-radius: 0.375em;
+    box-shadow: 2px 2px 0 #999999;
+    padding: 0.5em;
+    margin-bottom: 1em;
+    margin-left: 1em;
+}
+
+figure#imagefigure {
+    width: 33%;
+}
+
+figure#imagefigure img {
+    max-width: 100%;
+}
+
+.callout figcaption {
+    font-style: italic;
+    text-align: center;
+}
+
+#imagewrapper {
+    text-align: right;
+}
+
+@media screen and (max-width: 900px) {
+    /* Re-align the nav bar when it "drops" */
+    #pageheader nav {
+        float: left;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    /* Make navigation bar sit below the site title. */
+    #pageheader nav {
+        float: none;
+        clear: both;
+    }
+
+    /* Make the nav bar items display vertically */
+    #pageheader nav li {
+        float: none;
+        margin-right: 0;
+        margin-bottom: 0.5em;
+    }
+    /* Make the nav bar item links display vertically */
+    #pageheader nav li a {
+        float: none;
+    }
+
+    /* remove the "columns" from the two column layout by resetting their width and removing the float */
+    #pagesidebar {
+        width: auto;
+        float: none;
+    }
+    #columncontainer #content {
+        width: auto;
+        float: none;
+    }
+
+}
