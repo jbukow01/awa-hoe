@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>JeanLand Contact us</title>
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div id="page">
+            <header id="pageheader">
+                <h1>Jean<span>Land</span></h1>
+                <nav id="primary">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="ourproducts.html">Products</a></li>
+                        <li><a href="aboutus.html">About us</a></li>
+                        <li><a href="#">News</a></li>
+                        <li class="currentpage"><a href="contactus.html">Contact us</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <nav id="breadcrumbs">
+                <p><a href="index.html">Home</a> &rarr; <span class="current">Contact us</span></p>
+            </nav>
+
+                <section id="content">
+                    <h2>Contact JeanLand</h2>
+                    <h3>Call us</h3>
+                    <p>If you have any questions or comments, give us a call on one of the numbers below.</p>
+                    <dl>
+                        <dt>Sales</dt>
+                        <dd>0207 123 5555</dd>
+
+                        <dt>Customer services</dt>
+                        <dd>0207 123 6666</dd>
+
+                        <dt>Press office</dt>
+                        <dd>0207 123 7777</dd>
+                    </dl>
+                    <h3>Write to us.</h3>
+                    <p>Use the form below to send a message to the JeanLand team.</p>
+                    <form method="post" action="http://titan.dcs.bbk.ac.uk/~ubseaxt/process.php">
+                        <fieldset>
+                            <legend>Send us a message</legend>
+                            <div class="controlgroup">
+                                <label for="mail">*Email address:</label>
+                                <input type="email" id="mail" name="email" placeholder="Your full email address" required />
+                            </div>
+                            <div class="controlgroup">
+                                <label for="fname">Full name:</label>
+                                <input type="text" id="fname" name="fullname" optional />
+                            </div>
+                            <div class="controlgroup">
+                                <label for="int">I am interested in:</label>
+                                <select id="int"  name="interest">
+                                    <option value="1">Jeans</option>
+                                    <option value="2">Accessories</option>
+                                </select>
+                            </div>
+                            <div class="controlgroup">
+                                <label for="msg">Message:</label>
+                            <textarea placeholder="Type your message here..." name="message" id="msg"></textarea>
+                            </div>
+                            <div class="submit-field">
+                                <input type="submit" name="sendmessage" value="Send" class="hvr-back-pulse"/>
+                            </div>
+                        </fieldset>
+                    </form>
+
+
+                </section>
+
+            <footer id="pagefooter">
+                <ul>
+                    <li><a href="sizecharts.html">Size charts</a></li>
+                    <li><a href="media.html">Media</a></li>
+                    <li><a href="#">Site map</a></li>
+                    <li><a href="#">Privacy policy</a></li>
+                    <li><a href="#">Accessibility</a></li>
+                </ul>
+                <p>&copy; JeanLand, 2014</p>
+            </footer>
+        </div>
+    </body>
+</html>
